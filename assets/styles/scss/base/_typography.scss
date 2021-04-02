@@ -8,6 +8,29 @@ html {
   font-size: 62.5%;
 }
 
-.attribution {
-  font-size: 1.1rem;
+body{
+  font-size: $primary-font-size;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: $font-weight-bold;
+  letter-spacing: -1.1px;
+  line-height: 30px;
+  color: $color-very-dark-magenta;
+}
+
+h3{
+  font-size: 1.3rem;
+  line-height: 20px;
+  font-weight: $font-weight-normal;
+  color: $color-dark-grayish-magenta;
+}
+
+footer {
+  font-size: 1.3rem;
+  font-weight: normal;
+  p{
+    color: $color-very-dark-magenta;
+  }
 }

@@ -6,10 +6,106 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1.1px;
+  line-height: 30px;
+  color: #502050;
+}
+
+h3 {
+  font-size: 1.3rem;
+  line-height: 20px;
+  font-weight: 500;
+  color: #937b92;
+}
+
+footer {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+footer p {
+  color: #502050;
+}
+
+a {
+  text-decoration: none;
+  color: #502050;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 375px;
+  background-color: white;
+}
+
+.titleAndIntro {
+  display: block;
+  width: 375px;
+}
+
+.titleAndIntro h1 {
+  padding-top: 75px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.titleAndIntro h3 {
+  padding-top: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  padding-top: 12px;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: #f7f2f7;
+}
+
+footer p {
+  display: inline-block;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
