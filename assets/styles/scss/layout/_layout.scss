@@ -14,9 +14,10 @@ body{
 }
 
 // MAIN
+
 .titleAndIntro{
   display: block;
-  width: 375px;
+  width: $width-mobile;
 
   h1{
     padding-top: 75px;
@@ -30,11 +31,40 @@ body{
     padding-top: 5px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     text-align: center;
   }
 }
 
+.rating-container{
+  display: flex;
+  flex-direction: column;
+  width: $width-mobile;
+  align-items: center;
+
+  section{
+    width: 90%;
+    background-color: $color-light-grayish-magenta;
+    margin: 7px 10px 7px 10px;
+    text-align: center;
+    padding: 13px;
+    border-radius: 7px;
+
+    .star-container{
+      padding-bottom: 4px;
+      span{
+        background-image: url(/assets/images/icon-star.svg);
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-repeat: no-repeat;
+      }
+    }
+
+    
+  }
+  
+}
 
 
 // FOOTER

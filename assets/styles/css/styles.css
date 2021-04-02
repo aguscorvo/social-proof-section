@@ -22,7 +22,13 @@ h3 {
   font-size: 1.3rem;
   line-height: 20px;
   font-weight: 500;
-  color: #937b92;
+  color: #502050;
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #502050;
 }
 
 footer {
@@ -82,8 +88,43 @@ body {
   padding-top: 5px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   text-align: center;
+}
+
+.rating-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 375px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rating-container section {
+  width: 90%;
+  background-color: #f7f2f7;
+  margin: 7px 10px 7px 10px;
+  text-align: center;
+  padding: 13px;
+  border-radius: 7px;
+}
+
+.rating-container section .star-container {
+  padding-bottom: 4px;
+}
+
+.rating-container section .star-container span {
+  background-image: url(/assets/images/icon-star.svg);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
 }
 
 footer {

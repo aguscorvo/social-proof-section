@@ -24,7 +24,13 @@ h3{
   font-size: 1.3rem;
   line-height: 20px;
   font-weight: $font-weight-normal;
-  color: $color-dark-grayish-magenta;
+  color: $color-very-dark-magenta;
+}
+
+h6{
+  font-size: 1.2rem;
+  font-weight: $font-weight-bold;
+  color: $color-very-dark-magenta;
 }
 
 footer {
