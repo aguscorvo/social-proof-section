@@ -31,6 +31,24 @@ h6 {
   color: #502050;
 }
 
+h4 {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+}
+
+span {
+  font-size: 1.2rem;
+  color: rgba(238, 104, 164, 0.527);
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.2rem;
+  color: white;
+  line-height: 20px;
+}
+
 footer {
   font-size: 1.3rem;
   font-weight: normal;
@@ -107,7 +125,7 @@ body {
 }
 
 .rating-container section {
-  width: 90%;
+  width: 86%;
   background-color: #f7f2f7;
   margin: 7px 10px 7px 10px;
   text-align: center;
@@ -127,6 +145,64 @@ body {
   background-repeat: no-repeat;
 }
 
+.card-container {
+  width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 35px;
+  margin-bottom: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container article {
+  width: 86%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #502050;
+  margin: 7px 10px 7px 10px;
+  border-radius: 10px;
+  padding: 35px 37px 30px 36px;
+  text-align: left;
+}
+
+.card-container article .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 23px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container article .card-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.card-container article .card-header h4 {
+  display: block;
+}
+
+.card-container article .card-header span {
+  display: block;
+  padding-top: 4px;
+}
+
 footer {
   position: fixed;
   padding-top: 12px;
@@ -139,14 +215,5 @@ footer {
 
 footer p {
   display: inline-block;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

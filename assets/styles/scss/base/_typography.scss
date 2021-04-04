@@ -33,6 +33,26 @@ h6{
   color: $color-very-dark-magenta;
 }
 
+h4{
+  font-size: 1.2rem;
+  color: $color-white;
+  font-weight: $font-weight-normal;
+
+}
+
+span{
+  font-size: 1.2rem;
+  color: $color-soft-pink;
+  font-weight: $font-weight-normal;
+}
+
+p{
+  font-size: 1.2rem;
+  color: $color-white;
+  line-height: 20px;
+
+}
+
 footer {
   font-size: 1.3rem;
   font-weight: normal;
