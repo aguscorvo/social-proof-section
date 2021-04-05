@@ -4,30 +4,34 @@
   padding: 0;
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   // height: 100vh;
   min-width: 375px;
   background-color: $color-white;
+
+  @media (min-width: $breakpoint-desktop) {
+    background-color: aqua;
+  }
 }
 
 // MAIN
 
-.titleAndIntro{
+.titleAndIntro {
   display: block;
   width: $width-mobile;
 
-  h1{
+  h1 {
     padding-top: 75px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
-    text-align: center;    
+    text-align: center;
   }
 
-  h3{
+  h3 {
     padding-top: 5px;
     padding-left: 40px;
     padding-right: 40px;
@@ -36,13 +40,13 @@ body{
   }
 }
 
-.rating-container{
+.rating-container {
   display: flex;
   flex-direction: column;
   width: $width-mobile;
   align-items: center;
 
-  section{
+  section {
     width: 86%;
     background-color: $color-light-grayish-magenta;
     margin: 7px 10px 7px 10px;
@@ -50,20 +54,20 @@ body{
     padding: 13px;
     border-radius: 7px;
 
-    .star-container{
+    .star-container {
       padding-bottom: 4px;
-      span{
+      span {
         background-image: url(/assets/images/icon-star.svg);
         width: 20px;
         height: 20px;
         display: inline-block;
         background-repeat: no-repeat;
       }
-    }    
-  }  
+    }
+  }
 }
 
-.card-container{
+.card-container {
   width: $width-mobile;
   display: flex;
   flex-direction: column;
@@ -71,41 +75,39 @@ body{
   margin-bottom: 80px;
   align-items: center;
 
-  article{
+  article {
     width: 86%;
     justify-content: center;
     background-color: $color-very-dark-magenta;
     margin: 7px 10px 7px 10px;
     border-radius: 10px;
     padding: 35px 37px 30px 36px;
-    text-align: left;    
+    text-align: left;
 
-    .card-header{
+    .card-header {
       display: flex;
       flex-direction: row;
       padding-bottom: 23px;
       align-items: center;
 
-      img{
+      img {
         width: 40px;
         height: 40px;
         border-radius: 50px;
         margin-right: 20px;
       }
 
-      h4{
+      h4 {
         display: block;
       }
 
-      span{
+      span {
         display: block;
         padding-top: 4px;
       }
-      
-    } 
+    }
   }
 }
-
 
 // FOOTER
 
@@ -117,10 +119,8 @@ footer {
   height: 50px;
   text-align: center;
   background-color: $color-light-grayish-magenta;
-  
+
   p {
     display: inline-block;
   }
-
 }
-
