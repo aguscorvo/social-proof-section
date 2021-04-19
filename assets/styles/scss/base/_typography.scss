@@ -42,6 +42,9 @@ h6 {
   font-size: 1.2rem;
   font-weight: $font-weight-bold;
   color: $color-very-dark-magenta;
+  @media (min-width: $breakpoint-desktop) {
+    font-size: 1.3rem;
+  }
 }
 
 .name {
