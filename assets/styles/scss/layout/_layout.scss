@@ -13,14 +13,16 @@ body {
   background-color: $color-white;
   background-image: url(../../images/bg-pattern-top-mobile.svg),
     url(../../images/bg-pattern-bottom-mobile.svg);
-  background-position: 105% 0%, 100% 100%;
+  //background-position: 105% 0%, 100% 100%;
+  background-position: top left, bottom 0 right 100%;
   background-repeat: no-repeat;
   min-height: 100%;
 
   @media (min-width: $breakpoint-tablet) {
     background-image: url(../../images/bg-pattern-top-desktop.svg),
       url(../../images/bg-pattern-bottom-desktop.svg);
-    background-position: right 31vw bottom 137vh, left 0vw top 96vh;
+    //background-position: right 31vw bottom 137vh, left 0vw top 96vh;
+    background-position: top left, bottom right;
     flex-direction: row;
     width: $breakpoint-tablet;
     margin: auto;
@@ -29,13 +31,9 @@ body {
   @media (min-width: $breakpoint-desktop) {
     background-image: url(../../images/bg-pattern-top-desktop.svg),
       url(../../images/bg-pattern-bottom-desktop.svg);
-    background-position: right 62vw bottom 45vh, left 27vw top 16vh;
+    //background-position: right 62vw bottom 45vh, left 27vw top 16vh;
+    background-attachment: fixed;
     width: 1440px;
-  }
-
-  @media (min-width: 1441px) {
-    background-position: right 73vw bottom 37vh, left 47vw top 32vh;
-    width: 1600px;
   }
 }
 
@@ -177,7 +175,7 @@ body {
   margin-bottom: 80px;
   align-items: center;
 
-  article {
+  div {
     width: 86%;
     justify-content: center;
     background-color: $color-very-dark-magenta;
@@ -217,7 +215,7 @@ body {
     justify-content: center;
     margin-top: 0;
 
-    article {
+    div {
       width: 343px;
       height: 225px;
       margin-left: 13px;
