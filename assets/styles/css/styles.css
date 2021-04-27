@@ -108,16 +108,37 @@ body {
           align-items: center;
   min-width: 375px;
   background-color: white;
+  background-image: url(../../images/bg-pattern-top-mobile.svg), url(../../images/bg-pattern-bottom-mobile.svg);
+  background-position: 105% 0%, 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   body {
+    background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
+    background-position: right 31vw bottom 137vh, left 0vw top 96vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 1440px;
+    width: 768px;
     margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
+    background-position: right 62vw bottom 45vh, left 27vw top 16vh;
+    width: 1440px;
+  }
+}
+
+@media (min-width: 1441px) {
+  body {
+    background-position: right 73vw bottom 37vh, left 47vw top 32vh;
+    width: 1600px;
   }
 }
 
@@ -133,7 +154,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 85px;
+    padding: 60px;
     margin-top: 40px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -355,8 +376,12 @@ body {
   }
   .card-container article {
     width: 343px;
+    height: 225px;
     margin-left: 13px;
     margin-right: 13px;
+  }
+  .card-container article .card-header {
+    margin-top: 5px;
   }
   .card-container .card-container__item--second {
     margin-top: 35px;
@@ -364,19 +389,5 @@ body {
   .card-container .card-container__item--third {
     margin-top: 70px;
   }
-}
-
-footer {
-  position: fixed;
-  padding-top: 12px;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  background-color: #f7f2f7;
-}
-
-footer p {
-  display: inline-block;
 }
 /*# sourceMappingURL=styles.css.map */
