@@ -240,7 +240,7 @@ body {
 }
 
 .rating-container section .star-container span {
-  background-image: url(/assets/images/icon-star.svg);
+  background-image: url(../../images/icon-star.svg);
   width: 20px;
   height: 20px;
   display: inline-block;
